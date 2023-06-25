@@ -1,0 +1,4 @@
+﻿  test.c
+E:\desktop\bilibiliC\Data_Storage\test.c(84,6): warning C4013: “gets”未定义；假设外部返回 int
+E:\desktop\bilibiliC\Data_Storage\test.c(86,18): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  Data_Storage.vcxproj -> E:\desktop\bilibiliC\Data_Storage\x64\Debug\Data_Storage.exe
