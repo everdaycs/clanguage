@@ -1,0 +1,3 @@
+﻿  test.c
+E:\desktop\bilibiliC\test_2_12\test.c(117,1): warning C4090: “初始化”: 不同的“const”限定符
+  test_2_12.vcxproj -> E:\desktop\bilibiliC\test_2_12\x64\Debug\test_2_12.exe
