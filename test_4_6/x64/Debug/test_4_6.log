@@ -1,0 +1,18 @@
+﻿  test.c
+E:\desktop\bilibiliC\test_4_6\test.c(250,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+E:\desktop\bilibiliC\test_4_6\test.c(250,9): message : 请考虑在格式字符串中使用“%zd”
+E:\desktop\bilibiliC\test_4_6\test.c(251,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+E:\desktop\bilibiliC\test_4_6\test.c(251,9): message : 请考虑在格式字符串中使用“%zd”
+E:\desktop\bilibiliC\test_4_6\test.c(252,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+E:\desktop\bilibiliC\test_4_6\test.c(252,9): message : 请考虑在格式字符串中使用“%zd”
+E:\desktop\bilibiliC\test_4_6\test.c(253,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+E:\desktop\bilibiliC\test_4_6\test.c(253,9): message : 请考虑在格式字符串中使用“%zd”
+E:\desktop\bilibiliC\test_4_6\test.c(254,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+E:\desktop\bilibiliC\test_4_6\test.c(254,9): message : 请考虑在格式字符串中使用“%zd”
+E:\desktop\bilibiliC\test_4_6\test.c(255,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+E:\desktop\bilibiliC\test_4_6\test.c(255,9): message : 请考虑在格式字符串中使用“%zd”
+E:\desktop\bilibiliC\test_4_6\test.c(256,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+E:\desktop\bilibiliC\test_4_6\test.c(256,9): message : 请考虑在格式字符串中使用“%zd”
+E:\desktop\bilibiliC\test_4_6\test.c(257,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+E:\desktop\bilibiliC\test_4_6\test.c(257,9): message : 请考虑在格式字符串中使用“%zd”
+  test_4_6.vcxproj -> E:\desktop\bilibiliC\test_4_6\x64\Debug\test_4_6.exe

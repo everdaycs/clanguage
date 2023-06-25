@@ -1,0 +1,4 @@
+﻿  test.c
+E:\desktop\bilibiliC\模拟库函数实现\test.c(63,15): warning C4047: “=”:“char *”与“char”的间接级别不同
+E:\desktop\bilibiliC\模拟库函数实现\test.c(64,20): warning C4047: “=”:“char *”与“char”的间接级别不同
+  模拟库函数实现.vcxproj -> E:\desktop\bilibiliC\模拟库函数实现\x64\Debug\模拟库函数实现.exe

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "254fda98-c8e6-49f5-b381-16bb4f3a00e0": {
+      "ProjectGuid": "254fda98-c8e6-49f5-b381-16bb4f3a00e0",
+      "DisplayName": "程序常见错误类型",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

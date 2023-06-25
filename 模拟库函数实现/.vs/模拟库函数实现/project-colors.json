@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "77a779ee-07a6-46ce-aea8-f13072acbac2": {
+      "ProjectGuid": "77a779ee-07a6-46ce-aea8-f13072acbac2",
+      "DisplayName": "模拟库函数实现",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

@@ -1,0 +1,3 @@
+﻿  test.c
+E:\desktop\bilibiliC\test_3_2\test.c(170,9): warning C4477: “printf”: 格式字符串“%p”需要类型“void *”的参数，但可变参数 1 拥有了类型“unsigned long”
+  test_3_2.vcxproj -> E:\desktop\bilibiliC\test_3_2\Debug\test_3_2.exe
