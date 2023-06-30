@@ -1,0 +1,12 @@
+﻿  test.c
+E:\desktop\bilibiliC\test_3_15\test.c(365,20): warning C4133: “函数”: 从“int *”到“const char *”的类型不兼容
+E:\desktop\bilibiliC\test_3_15\test.c(366,20): warning C4133: “函数”: 从“int *”到“const char *”的类型不兼容
+E:\desktop\bilibiliC\test_3_15\test.c(371,10): warning C4133: “函数”: 从“int *”到“char *”的类型不兼容
+E:\desktop\bilibiliC\test_3_15\test.c(371,16): warning C4133: “函数”: 从“int *”到“const char *”的类型不兼容
+E:\desktop\bilibiliC\test_3_15\test.c(372,13): warning C4133: “函数”: 从“int *”到“const char *”的类型不兼容
+E:\desktop\bilibiliC\test_3_15\test.c(372,19): warning C4133: “函数”: 从“int *”到“const char *”的类型不兼容
+E:\desktop\bilibiliC\test_3_15\test.c(365,13): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\desktop\bilibiliC\test_3_15\test.c(366,13): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\desktop\bilibiliC\test_3_15\test.c(384,25): warning C4133: “函数”: 从“char [7]”到“int *”的类型不兼容
+E:\desktop\bilibiliC\test_3_15\test.c(384,31): warning C4133: “函数”: 从“char [6]”到“int *”的类型不兼容
+  test_3_15.vcxproj -> E:\desktop\bilibiliC\test_3_15\x64\Debug\test_3_15.exe

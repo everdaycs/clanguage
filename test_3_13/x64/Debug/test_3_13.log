@@ -1,0 +1,4 @@
+﻿  test.c
+E:\desktop\bilibiliC\test_3_13\test.c(130,2): warning C4002: 类函数宏的调用“assert”参数过多
+E:\desktop\bilibiliC\test_3_13\test.c(220,2): warning C4013: “gets”未定义；假设外部返回 int
+  test_3_13.vcxproj -> E:\desktop\bilibiliC\test_3_13\x64\Debug\test_3_13.exe
