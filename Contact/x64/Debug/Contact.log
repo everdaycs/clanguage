@@ -1,0 +1,4 @@
+﻿  contact.c
+E:\desktop\bilibiliC\Contact\contact.c(96,35): warning C4028: 形参 1 与声明不同
+E:\desktop\bilibiliC\Contact\contact.c(101,25): warning C4090: “函数”: 不同的“const”限定符
+  Contact.vcxproj -> E:\desktop\bilibiliC\Contact\x64\Debug\Contact.exe
