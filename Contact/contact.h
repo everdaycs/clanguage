@@ -1,12 +1,19 @@
 #pragma once
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <errno.h>
+#include <malloc.h>
+
 #define MAX 100
 #define MAX_NAME 20
 #define MAX_SEX 5
 #define MAX_TELE 12
 #define MAX_ADDR 30
+
+#define DEFAULT_SZ 3
+#define INC_SZ 2
 
 // 表示一个人的信息
 typedef struct PeoInfo
@@ -21,12 +28,16 @@ typedef struct PeoInfo
 
 typedef struct Contact
 {
-	PeoInfo data[MAX];//存放数据
+	PeoInfo* data;// data指向了存放数据的空间
 	int sz;// 记录通讯录中的有效信息个数
+	int capacity;// 通讯录当前的容量
 }Contact, *pContact;
 
 // 初始化通讯录
 void InitContact(Contact* pc);
+
+// 销毁通讯录
+void DestroyContact(Contact* pc);
 
 // 增加指定联系人
 void AddContact(Contact* pc);

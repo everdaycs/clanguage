@@ -8,35 +8,103 @@
 // 2. 当通讯录退出后, 重新运行, 之前的信息都丢了 当前通讯录中的信息都是保存在内存中的
 //    程序退出, 内存就回收, 下一次重新运行程序, 内存重新分配, 之前的数据就不变了.
 
+
+// 动态的版本
+// 1. 默认能够存放3个人的信息
+// 2. 不够的话, 每次增加两个人的信息
 //动态内存分配, 文件操作
+
+// 静态的版本
+//void InitContact(Contact* pc)
+//{
+//	pc->sz = 0;
+//	memset(pc->data, 0, sizeof(pc->data));
+//}
+
+// 动态的版本
 void InitContact(Contact* pc)
 {
 	pc->sz = 0;
-	memset(pc->data, 0, sizeof(pc->data));
+	pc->data = (PeoInfo*)malloc(DEFAULT_SZ * sizeof(PeoInfo));
+	if (pc->data = NULL)
+	{
+		printf("通讯录初始化失败 %s\n", strerror(errno));
+		return;
+	}
+	pc->capacity = DEFAULT_SZ;
+
+}
+
+// 静态版本
+//void AddContact(Contact* pc)
+//{
+//	if (pc->sz ==  MAX)
+//	{
+//		printf("通讯录已满, 无法增加\n");
+//		return;
+//	}
+//	printf("请输入名字:>");
+//	scanf("%s", pc->data[pc->sz].name);
+//	printf("请输入年龄:>");
+//	scanf("%d", &(pc->data[pc->sz].age));
+//	printf("请输入性别:>");
+//	scanf("%s", pc->data[pc->sz].sex);
+//	printf("请输入电话:>");
+//	scanf("%s", pc->data[pc->sz].tele);
+//	printf("请输入地址:>");
+//	scanf("%s", pc->data[pc->sz].addr);
+//
+//	pc->sz++;
+//	printf("添加成功");
+//}
+
+int CheckCapacity(Contact* pc)
+{
+	if (pc->sz == pc->capacity)
+	{
+		PeoInfo* ptr = (PeoInfo*)realloc(pc->data, (pc->capacity + INC_SZ) * sizeof(PeoInfo));
+		if (ptr == NULL)
+		{
+			printf("CheckCapacity error:%s\n", strerror(errno));
+			return 0;
+		}
+		else
+		{
+			pc->data = ptr;
+			pc->capacity += INC_SZ;
+			printf("增容成功");
+			return 1;
+		}
+	}
+	return 1;
 }
 
 void AddContact(Contact* pc)
 {
-	if (pc->sz ==  MAX)
+	
+	if (0 == (CheckCapacity(pc)))
 	{
-		printf("通讯录已满, 无法增加\n");
+		printf("空间不够，扩容失败\n");
 		return;
 	}
-	printf("请输入名字:>");
-	scanf("%s", pc->data[pc->sz].name);
-	printf("请输入年龄:>");
-	scanf("%d", &(pc->data[pc->sz].age));
-	printf("请输入性别:>");
-	scanf("%s", pc->data[pc->sz].sex);
-	printf("请输入电话:>");
-	scanf("%s", pc->data[pc->sz].tele);
-	printf("请输入地址:>");
-	scanf("%s", pc->data[pc->sz].addr);
+	else
+	{
+		printf("请输入名字:>");
+		scanf("%s", pc->data[pc->sz].name);
+		printf("请输入年龄:>");
+		scanf("%d", &(pc->data[pc->sz].age));
+		printf("请输入性别:>");
+		scanf("%s", pc->data[pc->sz].sex);
+		printf("请输入电话:>");
+		scanf("%s", pc->data[pc->sz].tele);
+		printf("请输入地址:>");
+		scanf("%s", pc->data[pc->sz].addr);
 
-	pc->sz++;
-	printf("添加成功");
+		pc->sz++;
+		printf("添加成功\n");
+	}
+	
 }
-
 
 void ShowContact(const Contact* pc)
 {
@@ -51,6 +119,15 @@ void ShowContact(const Contact* pc)
 	}
 }
 
+
+void DestroyContact(Contact* pc)
+{
+	free(pc->data);
+	pc->data = NULL;
+	pc->capacity = 0;
+	pc->sz = 0;
+	printf("释放内存");
+}
 
 static int FindByName(pContact pc, char name[])
 {
